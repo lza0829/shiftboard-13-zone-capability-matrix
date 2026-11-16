@@ -12,6 +12,7 @@
         <router-link to="/shifts">班次</router-link>
         <router-link to="/batches">在途批次</router-link>
         <router-link to="/handover">交班办理</router-link>
+        <router-link to="/qualifications">资格矩阵</router-link>
         <router-link to="/logs">交班记录</router-link>
         <router-link to="/reconcile">交班对账</router-link>
       </nav>

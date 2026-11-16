@@ -209,6 +209,48 @@ select {
 }
 .tag.on { border-color: var(--accent); color: var(--accent); }
 
+.sub {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+.hint { color: var(--muted); font-size: 12px; margin-top: 10px; }
+
+.matrix th, .matrix td { text-align: center; }
+.matrix td.shift-col, .matrix th:first-child { text-align: left; }
+.cell {
+  appearance: none;
+  min-width: 56px;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  cursor: pointer;
+}
+.cell.yes { border-color: var(--accent-2); color: var(--accent-2); background: rgba(79, 143, 123, 0.14); }
+.cell:hover { border-color: var(--accent); }
+
+.ops { display: flex; gap: 6px; align-items: center; }
+.mini {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  padding: 4px 10px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.mini:hover { border-color: var(--accent); color: var(--accent); }
+.mini-select {
+  min-width: 96px;
+  padding: 4px 6px;
+  font-size: 12px;
+}
+.reason { max-width: 460px; }
+
 @media (max-width: 800px) {
   .topbar, .content, .ribbon { padding-left: 16px; padding-right: 16px; }
   .stats { grid-template-columns: 1fr; }
